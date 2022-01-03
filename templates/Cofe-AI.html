@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CoFe-AI</title>
+    <link rel="stylesheet" href="/static/mainstyle.css">
+  
+</head>
+<body>
+    
+    <header ><h1><center>CoFe-AI</center></h1></header>
+
+    <h2><center>MARK THE SIMPTOMS THAT YOU FACE</center></h2>
+    <section id="prediction-form">
+        <div class="formpage">
+            <form class="formpage1" action="/result" method="POST" autocomplete="off">
+ <table><center>
+     <tr>
+         <th><center>COUGH</center></th>
+         <th><input type="checkbox" id="cough" name="cough" value=1 class="input1"></th>
+     </tr>
+     <tr>
+        <th><center>FEVER</center></th>
+        <th><input type="checkbox" id="fever" name="fever" value=1 class="input1"></th>
+    </tr>
+    <tr>
+        <th><center>SORE THROAT</center></th>
+        <th><input type="checkbox" id="sore_throat" name="sore_throat" value=1 class="input1"></th>
+    </tr>
+    <tr>
+        <th><center>SHORTNESS OF BREATH</center></th>
+        <th><input type="checkbox" id="shortness_of_breath" name="shortness_of_breath" value=1 class="input1"></th>
+    </tr>
+    <tr>
+        <th><center>HEAD ACHE</center></th>
+        <th><input type="checkbox" id="head_ache" name="head_ache" value=1 class="input1"></th>
+    </tr>
+    <tr>
+        <th><center>GENDER</center></th>
+        <th><select name="gender" id='gender' class="option1">
+            <option value=1>MALE</option>
+            <option value=0>FEMALE</option>
+            </select>
+        </th></tr>
+    <tr></tr>
+        <th><center>PHYSICAL CONTACT STATUS(IN LAST 15 DAYS)</center></th>
+        <th><select name="test_indication" id='cars' class="opt">
+            <option value=0>WAS IN ABROAD</option>
+            <option value=1>CLOSE CONTACT WITH COVID INFECTED PERSON</option>
+            <option value=2>NOT SURE</option>
+            </select>
+        </th>
+    </tr>
+    <tr>
+        <th><label for="age"><center>WHAT'S YOUR AGE : </center></label></th>
+        <th><input type="number" id="age" name="age" min=1 max=150 value={{request.form.age}}></th></tr>>
+    </tr>
+
+</center></table>
+
+<br><br><br>
+<center><input class="submit" type="submit" id="submit" "></center></form>
+
+</div>
+</section>
+</body>
+</html>

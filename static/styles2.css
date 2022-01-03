@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+
+}
+body{
+    background-color: aquamarine;
+}
+p{
+    padding-left: 90px;
+    padding-top: 20px;
+    font-size: 25px;
+}
+h1{
+    padding-left: 30px;
+    padding-top: 20px;
+}
+a{
+    text-decoration: none;
+}
